@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 clear
 
 echo "Installing LSST Software Stack with Conda"
@@ -47,7 +49,7 @@ fi
 echo "Installing LSST software using Conda"
 echo
 conda config --add channels http://eupsforge.net/conda/dev
-conda install lsst-apps
+conda install lsst-apps -y
 source eups-setups.sh
 echo
 
