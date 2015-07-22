@@ -17,7 +17,7 @@ echo
 # Install Miniconda
 #
 
-if [[ ! -f "$PWD/miniconda/.installed" ]]; then
+if [[ ! -f "$PWD/miniconda/.installed" ]] 2>"s.out"; then
 	case "$OSTYPE" in
 		linux*)  MINICONDA_SH=Miniconda-latest-Linux-x86_64.sh ;;
 		darwin*) MINICONDA_SH=Miniconda-latest-MacOSX-x86_64.sh ;;
